@@ -21,6 +21,7 @@ function arraySum(arr){
     arr.forEach(function(element) {
         summ = summ + element;
     })
-    console.log(summ);
+    return(multiplier) =>{return summ*multiplier}
 }
-arraySum(arry);
+let summm = arraySum(arry);
+console.log(summm(2));
