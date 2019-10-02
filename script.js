@@ -25,3 +25,17 @@ function arraySum(arr){
 }
 let summm = arraySum(arry);
 console.log(summm(2));
+
+//Task 3
+function validEmail(email){
+    return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email);
+    /*if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+    {
+    return (true)
+     }
+    alert("You have entered an invalid email address!")
+    return (false)
+    */
+}
+
+validEmail("yaminkhan017@gmail.com")
