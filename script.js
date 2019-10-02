@@ -75,3 +75,62 @@ var library = [
     }
 
     console.log(readStatus(2))
+
+
+//Task 5
+
+var cart = [ 
+    {
+        name: 'Shoes',
+        price: 560,
+        quantity: 4
+    },
+    {
+        name: 'Regular Tees',
+        price: 455.50,
+        quantity: 6
+    },
+    {
+        name: 'Socks',
+        price: 65.99,
+        quantity: 2
+    }];
+
+    //5a
+    function addItem(newItem){
+        cart.push(newItem);
+    }
+
+    var newItem = {
+        name:'tie',
+        price:'65.88',
+        quantity:'3'
+    }
+    addItem(newItem);
+    console.log(cart);
+
+    //5b
+    function sortCart(keyName){
+        cart.sort((a, b) => (a[keyName] > b[keyName]) ? 1 : -1)
+
+    }
+    sortCart('price');
+    console.log(cart);
+
+    //5c
+    function findByName(Name){
+        const result = cart.find( ({ name }) => name === Name );
+        console.log(result)
+    }
+    findByName("tie");
+
+    //5d
+
+    function totalCost(){
+        var summ=0;
+        cart.forEach(function(element) {
+            summ = summ + price;
+        })
+        console.log(summ);
+    }
+ totalCost();
